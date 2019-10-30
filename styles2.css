@@ -1,0 +1,178 @@
+.header{
+    background-color: #343232;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#FAF8F8;
+    height: 70px;
+    width:100%;
+ } 
+
+ .item1{
+     font-size: 35px;
+     font-weight: bold;
+     font-family: Helvetica;
+ }
+
+ .item2{
+    margin-left: 60%;  
+    font-size: 24px;
+    font-family: Helvetica;
+ }
+
+ .item3{
+     font-size: 24px;
+     font-family: Helvetica;
+ }
+
+ .item4{
+     font-size: 24px;
+     font-family: Helvetica;
+ }
+
+ .item5{
+     font-size: 24px;
+     font-weight: bold;
+     font-family: Helvetica;
+ }
+
+ .item6{
+     font-size: 24px;
+     font-weight: bold;
+     font-family: Helvetica;
+ }
+
+ .item7{
+    font-size: 24px; 
+    font-weight: bold;
+    font-family: Helvetica;
+ }
+
+ .item8{
+     font-size: 24px;
+     font-weight: bold;
+     font-family: Helvetica;
+ }
+
+.item9{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.item10{
+    font-size: 25px;
+}
+.subheader{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    color:black;
+    height: 70px;
+}
+
+
+.sale{
+    background-color: darkgrey;
+    display: flex;
+    justify-content:center;
+    height:50px;
+    align-items: center;
+}
+
+.cool{
+    display: flex
+}
+
+.item11{
+    margin: 5%;
+    margin-left: 15%;
+    font-size: 50px;
+    font-family: Helvetica;
+    font-style: bold;
+}
+
+.retro01{
+display: flex;
+justify-content: center;
+}
+
+.img{
+margin: 5%;
+}
+
+.retro02{
+display: flex;
+justify-content: center;
+}
+
+.img2{
+margin: 5%;
+}
+
+.retro03{
+display: flex;
+justify-content: center;
+}
+ .img3{
+margin: 5%;
+ }
+
+ .info1{
+    display: flex;
+ }
+
+ .text1{
+    margin-left: 30%;
+    font-size: 30px;
+ }
+
+ .info2{
+    display: flex;
+ }
+
+ .text2{
+    margin-left: 30%;
+    font-size: 30px;
+ }
+
+ .info3{
+    display: flex;
+ }
+
+ .text3{
+    margin-left: 30%;
+    font-size: 30px;
+ }
+
+ .additionalStuff{
+    background-color: #171515;
+    display: flex;
+    height:500px;
+    width:100%;
+    justify-content: space-between;
+}
+
+.list1{
+    color: white;
+}
+
+.list2{
+    color: white;
+}
+
+.list3{
+    color: white;
+    margin-right: 45%
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 10%
+}

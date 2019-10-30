@@ -13,44 +13,53 @@
  .item1{
      font-size: 35px;
      font-weight: bold;
+     font-family: Helvetica;
  }
 
  .item2{
     margin-left: 60%;  
     font-size: 24px;
+    font-family: Helvetica;
  }
 
  .item3{
      font-size: 24px;
+     font-family: Helvetica;
  }
 
  .item4{
      font-size: 24px;
+     font-family: Helvetica;
  }
 
  .item5{
      font-size: 24px;
      font-weight: bold;
+     font-family: Helvetica;
  }
 
  .item6{
      font-size: 24px;
      font-weight: bold;
+     font-family: Helvetica;
  }
 
  .item7{
     font-size: 24px; 
     font-weight: bold;
+    font-family: Helvetica;
  }
 
  .item8{
      font-size: 24px;
      font-weight: bold;
+     font-family: Helvetica;
  }
 
 .item9{
     font-size: 24px;
     font-weight: bold;
+    font-family: Helvetica;
 }
 
 .item10{
@@ -84,6 +93,17 @@
     align-items: center;
 }
 
+body{
+    background-image: url("addidasgif.png");
+    background-size: cover;
+    background-repeat:repeat;
+    height: 2000px;
+    background-position: center;
+}
+
+
+
+
 .pic{
     /* height: 100px;
     width: 300px; */
@@ -103,19 +123,24 @@
     color: black;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 50px;
+    font-family: Helvetica;
 }
 .img-wrapper1 p{
     position: absolute;
-    top:3em;
-    left:0;
+    top:4em;
+    left:1em;
     color: black;
+    font-size: 30px;
+    font-family: Helvetica;
 }
 
 .img-wrapper1 button{
     position: absolute;
-    top:6em;
-    left:0;
+    top:11em;
+    left:2em;
     color: black;
+    font-size: 20px
 }
 
 .img-wrapper2{
@@ -125,8 +150,9 @@
 .img-wrapper2 button{
     position: absolute;
     bottom:6em;
-    left:0;
+    left:2em;
     color: black;
+    font-size: 20px;
 }
 
 .img-wrapper3{
@@ -139,19 +165,24 @@
     color: black;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 55px;
+    font-family: Helvetica;
 }
 .img-wrapper3 p{
     position: absolute;
-    top:3em;
-    left:0;
+    top:4em;
+    left:1em;
     color: black;
+    font-size: 30px;
+    font-family: Helvetica;
 }
 
 .img-wrapper3 button{
     position: absolute;
-    top:6em;
-    left:0;
+    top:11em;
+    left:2em;
     color: black;
+    font-size: 20px;
 }
 
 .img-wrapper4{
@@ -165,24 +196,33 @@
     color: black;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 50px;
+    color: white;
+    font-family: Helvetica;
 }
 
 .collection{
     margin: 5%;
     font-size: 40px;
     font-weight: bold;
+    font-family: Helvetica;
+    color: white;
 }
 
 .featured{
     margin: 5%;
     font-size: 40px;
     font-weight: bold;
+    font-family: Helvetica;
+    color: white;
 }
 
 .specials{
     margin: 5%;
     font-size: 40px;
     font-weight: bold;
+    font-family: Helvetica;
+    color: purple;
 }
 
 .additionalStuff{
@@ -214,6 +254,28 @@ li{
     margin: 10%
 }
 
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+
+    75%{
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+  }
 
 
 /* em  rem  vh  %  px */
