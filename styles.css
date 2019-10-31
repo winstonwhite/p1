@@ -1,4 +1,7 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
 .header{
     background-color: #343232;
     display: flex;
@@ -277,6 +280,25 @@ p {
       }
   }
 
+  .item5, .item6, .item7, .item8, .item9{
+      animation-duration: 5s;
+      animation-name: rollIn;
+  }
+
+  @keyframes rollIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
 
 /* em  rem  vh  %  px */
 
