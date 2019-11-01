@@ -1,11 +1,3 @@
-// // let action = document.querySelector('img-wrapper')
-// let question = document.getElementsByClassName("img-wrapper1");
-
-// for (var i = 0; i < question.length ; i++)
-// {
-//     question.addEventListener("click", function () { Window.promt('Are you sure?'); }, false);
-// }
-
 document.getElementById("button").onclick = function(){
     alert("Sorry Dude out of Stock")
 };
