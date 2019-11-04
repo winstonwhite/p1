@@ -1,11 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     background-image: url("addidasgif.png");
     background-size: cover;
     background-repeat:repeat;
     background-position: center;
+}
+header{
+    width:100%;
 }
 .header{
     background-color: #343232;
@@ -17,7 +20,19 @@ body{
     height: 70px;
     width:100%;
  } 
-
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+nav div{
+    font-size:1em;
+    margin-right: 10%;
+}
+nav i{
+    font-size:.5em;
+    margin-right: 5%;
+}
  .item1{
      font-size: 35px;
      font-weight: bold;
@@ -25,18 +40,15 @@ body{
  }
 
  .item2{
-    margin-left: 60%;  
-    font-size: 24px;
     font-family: Helvetica;
  }
 
  .item3{
-     font-size: 24px;
      font-family: Helvetica;
+     transform:translateY(5px)
  }
 
  .item4{
-     font-size: 24px;
      font-family: Helvetica;
  }
 
@@ -92,57 +104,37 @@ body{
     align-items: center;
 }
 
-.pic .img-wrapper1 img{
-    width: 80%; 
-}
-.pic .img-wrapper2 img{
-    width: 325%
-}
 
-.pic .img-wrapper3 img{
-    width: 65%
-}
-
-.pic .img-wrapper4 img{
-    width: 65%
-}
-
-.pictures{
-    display: flex;
-    /* height: 100px;
-    width: 300px; */
-    justify-content: center;
-}
-
-
-.pic{
-    /* height: 100px;
-    width: 300px; */
-    justify-content: center;
-    /* margin: 0 auto; */
-    align-content: center;
-    align-items: center;
-    margin-left: 1%;
-    width:100%
-}
-.img-wrapper1{
+.img-wrapper1, .img-wrapper2, .img-wrapper3, .img-wrapper4{
     position:relative;
-    width: 80%
+    width: 50%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    width:70%;
 }
+
+
+.img-wrapper1 img, .img-wrapper2 img, .img-wrapper3 img,.img-wrapper4 img {
+    width: 100%; 
+    /* margin:0 auto; */
+
+}
+
 .img-wrapper1 h4{
     position: absolute;
     top:0;
-    left:0;
+    left:5%;
     color: black;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 50px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    font-size: 2em;
     font-family: Helvetica;
 }
 .img-wrapper1 p{
     position: absolute;
-    top:4em;
-    left:1em;
+    top:12%;
+    left:5%;
     color: black;
     font-size: 30px;
     font-family: Helvetica;
@@ -154,25 +146,20 @@ body{
     left:2em;
     color: black;
     font-size: 20px
+    /* border:1px black; */
 }
 
-.img-wrapper2{
-    position:relative;
-    width: 20%;
-}
+
+
 
 .img-wrapper2 button{
     position: absolute;
-    bottom:6em;
-    left:2em;
+    bottom:15%;
+    right:15%;
     color: black;
     font-size: 20px;
 }
 
-.img-wrapper3{
-    position:relative;
-    width: 100%
-}
 .img-wrapper3 h4{
     position: absolute;
     top:0;
@@ -200,19 +187,30 @@ body{
     font-size: 20px;
 }
 
-.img-wrapper4{
-    position:relative;
-    width:100%;
+.pictures{
+    display: flex;
+    /* height: 100px;
+    width: 300px; */
+    justify-content: center;
 }
+
+
+.pic{
+    justify-content: center;
+    margin-left: 1%;
+    width:100%
+}
+
+
+
 
 .img-wrapper4 h4{
     position: absolute;
     top:0;
-    right:0;
+    left:10%;
     color: black;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 50px;
+  
+    font-size: 2em;
     color: white;
     font-family: Helvetica;
 }
@@ -313,19 +311,70 @@ p {
   }
   
 
-    @media(max-width: 500px){
+  @media screen and (max-width: 500px){
       .header{
-        justify-content: space-around;
+         justify-content: space-around;
           width: 100vw;
           height: 100%;
+          font-size:.5em;
+
        }
       .item1{
-        font-size: 35px;
+        font-size: 2em;
         font-weight: bold;
         font-family: Helvetica;
      }
+     .subheader div{
+         font-size:1em;
+     }
+
+     .item10{
+         font-size: 1em
+     }
+
+     .pic h4{
+         margin:-1%;
+         font-size: 20px;
+     }
+
+     .pic p{
+         font-size: 15px
+     }
+
+     .pic button{
+         top: 5em;
+         left: 0;
+         font-size: 15px;
+     }
+
+     .img-wrapper2 button{
+         bottom: -1em;
+         left: 15em;
+         font-size: 15px;
+         color: red;
+     }
    
-    .item2{
+     .img-wrapper3 p{
+         margin: -2em;
+         margin-left: .5em
+     }
+
+     .img-wrapper3 button{
+         margin: -1em;
+         margin-left: .5em;
+     }
+     .collection{
+         font-size: 2em;
+     }
+
+     .featured{
+        font-size: 2em;
+    }
+
+    .specials{
+        font-size: 2em;
+    }
+    /* .item2{
        margin-left: 3%;  
        font-size: 20px;
        font-family: Helvetica;
@@ -347,12 +396,12 @@ p {
 
     .sale{
         width: 290%
-    }
-    .img-wrapper1{
+    } */
+    /* .img-wrapper1{
         width: auto;
         margin-left: 20%;
         
-    }
+    } */
     
     }
 

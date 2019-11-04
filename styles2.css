@@ -1,8 +1,15 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100vw;
+    background-image: url("addidasgif.png");
+    background-size: cover;
+    background-repeat:repeat;
+    background-position: center;
 }
-
+header{
+    width:100%;
+}
 .header{
     background-color: #343232;
     display: flex;
@@ -13,7 +20,19 @@ body{
     height: 70px;
     width:100%;
  } 
-
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+nav div{
+    font-size:1em;
+    margin-right: 10%;
+}
+nav i{
+    font-size:.5em;
+    margin-right: 5%;
+}
  .item1{
      font-size: 35px;
      font-weight: bold;
@@ -21,18 +40,15 @@ body{
  }
 
  .item2{
-    margin-left: 60%;  
-    font-size: 24px;
     font-family: Helvetica;
  }
 
  .item3{
-     font-size: 24px;
      font-family: Helvetica;
+     transform:translateY(5px)
  }
 
  .item4{
-     font-size: 24px;
      font-family: Helvetica;
  }
 
@@ -78,7 +94,7 @@ body{
     color:black;
     height: 70px;
 }
-
+ 
 
 .sale{
     background-color: darkgrey;
@@ -101,31 +117,21 @@ body{
     color: white
 }
 
-.retro01{
-display: flex;
-justify-content: center;
+.retro01, .retro02, .retro03{
+    position:relative;
+    width: 50%;
+    /* margin:0 auto; */
+    display:flex;
+    justify-content: left;
+    width:100%;
 }
 
-.img{
-margin: 5%;
+.retro01 img{
+    width: 100%;
 }
-
-.retro02{
-display: flex;
-justify-content: center;
-}
-
-.img2{
-margin: 5%;
-}
-
-.retro03{
-display: flex;
-justify-content: center;
-}
- .img3{
-margin: 5%;
- }
+.retro02 img, .retro03 img{
+    width: 50%
+    }
 
  .info1{
     display: flex;
@@ -204,4 +210,27 @@ body{
     background-repeat:repeat;
     height: 2000px;
     background-position: center;
+}
+
+
+@media screen and (max-width: 500px){
+    .header{
+       justify-content: space-around;
+        width: 100vw;
+        height: 100%;
+        font-size:.5em;
+
+     }
+    .item1{
+      font-size: 2em;
+      font-weight: bold;
+      font-family: Helvetica;
+   }
+   .subheader div{
+       font-size:1em;
+   }
+
+   .item10{
+       font-size: 1em
+   }
 }
